@@ -1,0 +1,12 @@
+---
+format:
+  html:
+    grid:
+      body-width: 1200px
+---
+# Introduction
+
+This template is easy to understand, as it has been the **Quarto backbone** for almost everyone now. In future time, to interpret [Quarto documentation](https://quarto.org/) and its feature in usage, perhaps we can utilize it to great effect and start with standardization of the usage of this template modification, but so far, we will use this. To compile and preview Quarto, view the [Getting Started page](https://quarto.org/docs/get-started/) of the Quarto documentation and install it locally. When pushed onto GitLab, the runners here already had an image of quarto, so you do not have to worry on such. 
+
+All contents are currently in `/core`, with the `_quarto.yml` holding organizational at the folder's root content rendering. Since it is a **book template**, there is **no hidden mechanism** i.e. no hidden link without declaration. Another template of specificity would be included soon as far as we consider `website` project format. For now, without change, most contents would be stored in `\content`. About `part` and `chapter`, please also refer to the documentation. An easy explanation for that is rather just 'organization template only' for files in a book, with parts being highest of individual chapters, so to speak. Technical information can all be found in the documentation itself. 
+
