@@ -124,3 +124,55 @@ p em, li em {
 html {
   filter: brightness(0.7) contrast(0.9);
 }
+
+/* Aggressively saturated variables to survive global brightness reduction */
+:root {
+  --quarto-hl-kw-color: #00e5ff; /* Keywords - highly saturated teal */
+  --quarto-hl-st-color: #66d9ef; /* Strings - light bright blue */
+  --quarto-hl-vs-color: #66d9ef; /* Verbatim strings */
+  --quarto-hl-fu-color: #ffaa66; /* Functions - brightened orange */
+  --quarto-hl-at-color: #ffaa66; /* Attributes */
+  --quarto-hl-al-color: #ff5555; /* Alerts/Errors */
+  --quarto-hl-er-color: #ff5555; 
+  --quarto-hl-co-color: #a0a0a0; /* Comments - lifted gray to remain visible */
+  --quarto-hl-cv-color: #a0a0a0; 
+  --quarto-hl-dt-color: #ffffff; /* Data types - pure white */
+  --quarto-hl-va-color: #ffffff; /* Variables */
+  --quarto-hl-op-color: #e0e0e0; /* Operators */
+  --quarto-hl-bu-color: #00e5ff; /* Built-ins */
+  --quarto-hl-ch-color: #66d9ef; /* Characters */
+  --quarto-hl-dv-color: #ffaa66; /* Decimals/Values */
+  --quarto-hl-fl-color: #ffaa66; /* Floats */
+  --quarto-hl-im-color: #ffffff; /* Imports */
+  --quarto-hl-in-color: #a0a0a0; /* Information */
+  --quarto-hl-ot-color: #66d9ef; /* Others */
+  --quarto-hl-pp-color: #ffaa66; /* Preprocessors */
+  --quarto-hl-sc-color: #ffffff; /* Special characters */
+  --quarto-hl-ss-color: #66d9ef; /* Special strings */
+  --quarto-hl-wa-color: #ffaa66; /* Warnings */
+}
+
+/* Fallback isolation to force overrides if Quarto variables fail to cascade */
+pre.sourceCode span.kw, pre.sourceCode span.dt, pre.sourceCode span.bu { color: var(--quarto-hl-kw-color) !important; }
+pre.sourceCode span.st, pre.sourceCode span.vs, pre.sourceCode span.ss { color: var(--quarto-hl-st-color) !important; }
+pre.sourceCode span.fu, pre.sourceCode span.at { color: var(--quarto-hl-fu-color) !important; }
+pre.sourceCode span.co, pre.sourceCode span.cv { color: var(--quarto-hl-co-color) !important; font-style: italic; }
+pre.sourceCode span.va, pre.sourceCode span.op { color: var(--quarto-hl-va-color) !important; }
+
+/* Foundational text color for all un-annotated code, pseudocode, and punctuation */
+pre,
+code,
+pre > code,
+div.sourceCode,
+.sourceCode pre,
+pre.sourceCode code {
+  color: #e0e0e0 !important;
+}
+
+/* Establish the base luminous text color for explicitly declared language blocks */
+div.sourceCode,
+pre.sourceCode,
+code.sourceCode,
+pre.sourceCode > code.sourceCode > span {
+  color: #e0e0e0 !important;
+}
