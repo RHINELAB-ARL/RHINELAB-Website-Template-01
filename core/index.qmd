@@ -1,10 +1,12 @@
 ---
-format:
-  html:
-    grid:
-      body-width: 1200px
+title: Introduction
+title-block-banner: true
+description: Something certainly in mind and of spirit. 
+author: Bui Gia Khanh
 ---
-# Introduction
+
+
+## Template discussion
 
 This template is easy to understand, as it has been the **Quarto backbone** for almost everyone now. In future time, to interpret [Quarto documentation](https://quarto.org/) and its feature in usage, perhaps we can utilize it to great effect and start with standardization of the usage of this template modification, but so far, we will use this. To compile and preview Quarto, view the [Getting Started page](https://quarto.org/docs/get-started/) of the Quarto documentation and install it locally. When pushed onto GitLab, the runners here already had an image of quarto, so you do not have to worry on such. 
 

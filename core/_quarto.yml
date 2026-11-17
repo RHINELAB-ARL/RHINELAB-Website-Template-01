@@ -2,10 +2,17 @@ project:
   type: book
   output-dir: public
   resources: 
+    - "CNAME"
     - robot.txt
 
+
+date-modified: last-modified
+
+execute:
+  freeze: auto
+
 book:
-  title: "Modelling, Theoretical Artificial Intelligence and Learning-theoretic Group (MTIL)"
+  title: "RHINELAB@CORe, Book Template"
   repo-url: https://github.com/
   repo-actions: [edit, issue, source]
   repo-subdir: book
@@ -21,7 +28,7 @@ book:
   page-footer:
     left: |
       All content licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) <br> &copy; Bui Gia Khanh.
-    center: "[Website](https://amane-fujimiya.github.io/) | [GitHub](https://github.com/Amane-Fujimiya) | [Blog](https://amane-fujimiya.github.io/blogs) | RHINELAB-RINALAB - Modelling, Theoretical Artificial Intelligence and Learning-theoretic Group"
+    center: "[Website](https://amane-fujimiya.github.io/) | [GitHub](https://github.com/Amane-Fujimiya) | [Blog](https://amane-fujimiya.github.io/blogs) | RHINELAB- Modelling, Theoretical Artificial Intelligence and Learning-theoretic Group and RHINELAB@LOGISTICS, RHINELAB@LOGIT"
     right: Built with [Quarto](https://quarto.org/).
     background: "#f8f9fa"
   chapters:
@@ -34,29 +41,49 @@ book:
 #bibliography: references.bib
 
 format:
-  html:
-    lightbox: true
-    theme:
-      light: [default, style/custom.scss]
-      dark: [default, style/custom_dark.scss]
+  rhinelab-html:
     fontsize: "14px"
-    linestretch: 1.6
-    mainfont: "Roboto"
-    monofont: "Fira Mono"
+    number-sections: true
     smooth-scroll: true
+    number-depth: 3
     toc-depth: 3
     code-link: true
     code-tools:
       toggle: true
     code-fold: false
-    highlight-style: printing
-    code-block-bg: true
     code-overflow: wrap
     reference-location: margin
+    highlight-style: printing
+    code-block-bg: true
     mermaid:
       theme: neutral
     grid: 
       body-width: 1000px
+
+#format:
+#  html:
+#    lightbox: true
+#    theme:
+#      light: [default, style/custom.scss]
+#      dark: [default, style/custom_dark.scss]
+#    fontsize: "14px"
+#    linestretch: 1.6
+#    mainfont: "Roboto"
+#    monofont: "Fira Mono"
+#    smooth-scroll: true
+#    toc-depth: 3
+#    code-link: true
+#    code-tools:
+#      toggle: true
+#    code-fold: false
+#    highlight-style: printing
+#    code-block-bg: true
+#    code-overflow: wrap
+#    reference-location: margin
+#    mermaid:
+#      theme: neutral
+#    grid: 
+#      body-width: 1000px
 
 bibliography: references.bib
 
